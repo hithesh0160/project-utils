@@ -8,6 +8,8 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 
 - `docs/graphify.md` - Graphify setup, commands, and project workflow notes.
 - `docs/get-shit-done.md` - A practical execution system for turning messy work into finished outcomes.
+- `docs/ultracontext.md` - Shared context infrastructure for AI agents and coding sessions.
+- `docs/omniroute.md` - AI gateway notes for one endpoint, routing, fallback, MCP, and model providers.
 - `docs/github-actions.md` - CI, scheduled jobs, artifacts, and repo automation patterns.
 - `docs/python-fastapi-pytest.md` - Python service and testing stack notes.
 - `docs/allure-reports.md` - Allure test report generation and publishing.
