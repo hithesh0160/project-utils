@@ -8,6 +8,15 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 
 - `docs/graphify.md` - Graphify setup, commands, and project workflow notes.
 - `docs/get-shit-done.md` - A practical execution system for turning messy work into finished outcomes.
+- `docs/github-actions.md` - CI, scheduled jobs, artifacts, and repo automation patterns.
+- `docs/python-fastapi-pytest.md` - Python service and testing stack notes.
+- `docs/allure-reports.md` - Allure test report generation and publishing.
+- `docs/telegram-automation.md` - Telegram bot notifications from scripts and CI.
+- `docs/java-selenium-testng.md` - Maven, Selenium, and TestNG automation setup.
+- `docs/playwright.md` - Playwright browser automation and MCP notes.
+- `docs/appium-android.md` - Android Appium test workflow.
+- `docs/docker-test-runners.md` - Dockerized test execution patterns.
+- `docs/react-vite-capacitor.md` - React, Vite, Capacitor, Firebase app workflow.
 - `docs/llm-wiki.md` - LLM wiki concepts, structure, and usage patterns.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
