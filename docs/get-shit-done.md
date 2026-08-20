@@ -1,81 +1,72 @@
-# Get Shit Done
+# Get Shit Done (GSD Framework)
 
-Get Shit Done is a lightweight execution system for turning vague, stressful, or overloaded work into finished outcomes.
+[Get Shit Done (GSD)](https://github.com/gsd-build/get-shit-done) (now maintained under [open-gsd/gsd-core](https://github.com/open-gsd/gsd-core)) is a meta-prompting, context engineering, and spec-driven development framework designed to maximize AI coding agent reliability (e.g., Claude Code, Codex, Gemini).
 
-The point is not to create a perfect productivity ritual. The point is to reduce friction, choose the next useful move, and keep closing loops.
+---
 
-## Core Rules
+## Purpose & Core Philosophy
 
-- Define the outcome before choosing tasks.
-- Keep the active list small enough to finish.
-- Prefer visible progress over perfect planning.
-- Remove or defer work that does not move the outcome.
-- End each work block with a clear next action.
-- Capture decisions so the same question does not keep coming back.
+AI agents suffer from **context rot**—performance and reasoning degrade as context windows accumulate irrelevant output, chatter, and debug attempts.
 
-## The 10-Minute Triage
+GSD solves this through:
+- **Spec-Driven Slicing:** Break work into explicit, verifiable micro-tasks before touching code.
+- **Fresh Context Cycles:** Reset or isolate context windows per task phase.
+- **Atomic Commits & State Machine:** Maintain state in structured markdown files (`.gsd/` or execution plans) so work can be paused, resumed, or audited.
+- **Verification Gates:** Explicit test/verification requirements before declaring a step complete.
 
-Use this when work feels messy.
+---
 
+## Phase Workflow
+
+GSD enforces a strict cycle for non-trivial coding tasks:
+
+```text
+  1. DISCUSS ──> 2. PLAN ──> 3. EXECUTE ──> 4. VERIFY ──> 5. COMMIT
+```
+
+1. **Discuss / Clarify:**
+   - Define exact desired outcome and scope limits.
+   - Establish what is *out of scope*.
+2. **Plan (Spec & Tasks):**
+   - Create step-by-step checklist files (e.g., `templates/gsd-plan.md` or `.gsd/PLAN.md`).
+   - Identify dependencies, edge cases, and automated tests.
+3. **Execute:**
+   - Implement one slice at a time in isolation.
+   - Keep context clean by avoiding massive unstructured tool outputs.
+4. **Verify:**
+   - Run empirical build/test tools. Never claim success without verification output.
+5. **Commit & Closeout:**
+   - Create clean, atomic Git commits for completed slices.
+
+---
+
+## Triage & Anti-Stall Techniques
+
+### 10-Minute Triage
+Use when work feels messy or overwhelming:
 1. Write the desired outcome in one sentence.
-2. List every open loop without organizing it.
-3. Mark each item as `do`, `defer`, `delegate`, or `delete`.
-4. Pick the smallest task that creates visible progress.
-5. Start a 25-50 minute work block.
+2. List all open items without organizing.
+3. Mark each item: `Do`, `Defer`, `Delegate`, `Delete`.
+4. Pick the smallest item that creates visible progress.
+5. Work in a single uninterrupted 25-50 minute block.
 
-## Daily Execution Loop
+### Anti-Stall Questions
+When an AI agent or developer stalls:
+- Is the step too large? (Slice smaller)
+- Is the verification condition missing? (Define exact pass criteria)
+- Are we chasing symptoms instead of root cause? (Read full error traceback)
+- Should we drop unneeded scope? (Simplify)
 
-```text
-1. Outcome: What needs to be true by the end of today?
-2. Focus: What are the 1-3 tasks that actually matter?
-3. Blockers: What could stop progress?
-4. First move: What can be started in under 5 minutes?
-5. Closeout: What changed, what remains, and what is next?
-```
+---
 
-## Project Execution Loop
+## Associated Artifacts & Utilities in Repo
 
-Use this for larger project work.
+- **`templates/gsd-plan.md`**: Template for focused, spec-driven execution plans.
+- **`prompts/get-shit-done.md`**: Meta-prompts for planning, unblocking, and executing tasks.
 
-```text
-Clarify -> Slice -> Execute -> Verify -> Ship -> Review
-```
+---
 
-- `Clarify` - define success, constraints, and owner.
-- `Slice` - break work into deliverable chunks.
-- `Execute` - work on one chunk at a time.
-- `Verify` - test, review, or inspect the result.
-- `Ship` - publish, merge, send, deploy, or hand off.
-- `Review` - record lessons and next actions.
+## Links & Setup
 
-## Anti-Stall Checklist
-
-When progress stalls, ask:
-
-- Is the next action too big?
-- Is the outcome unclear?
-- Is a decision missing?
-- Am I waiting on someone?
-- Is this task still worth doing?
-- Can I ship a smaller version?
-
-## When To Use
-
-- Planning the day.
-- Getting unstuck.
-- Breaking down a project.
-- Preparing work for an AI assistant.
-- Turning scattered notes into an execution plan.
-- Closing a project with a clean summary.
-
-## When To Avoid
-
-- Work that needs deep research before action.
-- Emotional decisions that need rest or conversation first.
-- Tasks where quality requirements are unknown.
-
-## Useful Artifacts
-
-- `templates/gsd-plan.md` - focused execution plan template.
-- `prompts/get-shit-done.md` - prompts for planning and unblocking.
-
+- **Repo:** [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) / [open-gsd/gsd-core](https://github.com/open-gsd/gsd-core)
+- **Cli / Installation:** `npx get-shit-done-cc@latest`

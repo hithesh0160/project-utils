@@ -9,7 +9,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `AGENTS.md` - Agent entry point with repo layout, navigation rules, and content conventions.
 - `docs/agent-reach.md` - Agent Reach CLI for reading and searching Twitter, Reddit, YouTube, GitHub, and more.
 - `docs/graphify.md` - Graphify setup, commands, and project workflow notes.
-- `docs/get-shit-done.md` - A practical execution system for turning messy work into finished outcomes.
+- `docs/get-shit-done.md` - Get Shit Done (`gsd-build/get-shit-done` / `open-gsd/gsd-core`) spec-driven framework to eliminate context rot.
 - `docs/ultracontext.md` - Shared context infrastructure for AI agents and coding sessions.
 - `docs/omniroute.md` - AI gateway notes for one endpoint, routing, fallback, MCP, and model providers.
 - `docs/github-actions.md` - CI, scheduled jobs, artifacts, and repo automation patterns.
@@ -54,6 +54,10 @@ This repo includes notes on [Agent Reach](https://github.com/Panniantong/Agent-R
 ## LLM Wiki
 
 This repo includes notes on [LLM Wiki](https://github.com/Oshayr/LLM-Wiki), an autonomous knowledge base plugin featuring research-on-miss, semantic search, local `.wiki/` storage, and a Wikipedia-style web UI. See `docs/llm-wiki.md` for commands, features, and setup.
+
+## Get Shit Done (GSD)
+
+This repo includes notes on [Get Shit Done](https://github.com/gsd-build/get-shit-done) ([open-gsd/gsd-core](https://github.com/open-gsd/gsd-core)), a spec-driven development and meta-prompting framework to eliminate context rot for AI agents. See `docs/get-shit-done.md` for workflow phases and setup.
 
 ## Naming Convention
 
