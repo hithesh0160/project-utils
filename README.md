@@ -6,6 +6,8 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 
 ## Repository Map
 
+- `AGENTS.md` - Agent entry point with repo layout, navigation rules, and content conventions.
+- `docs/agent-reach.md` - Structuring repos so AI agents can navigate them reliably.
 - `docs/graphify.md` - Graphify setup, commands, and project workflow notes.
 - `docs/get-shit-done.md` - A practical execution system for turning messy work into finished outcomes.
 - `docs/ultracontext.md` - Shared context infrastructure for AI agents and coding sessions.
@@ -44,6 +46,10 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 3. Store repeatable formats in `templates/`.
 4. Add project-specific examples only when they teach a reusable pattern.
 5. Review notes after each real project use and update what actually worked.
+
+## Agent Reach
+
+This repo includes `AGENTS.md` at the root so AI agents (Gemini, Claude, Codex, etc.) can navigate it without extra instructions. See `docs/agent-reach.md` for the full concept and setup guide.
 
 ## Naming Convention
 
