@@ -1,15 +1,18 @@
-# Project Knowledge Tools
+# Project Utils
 
 This repository collects reusable notes, workflows, prompts, and evaluation checklists for tools that help understand, document, and maintain software projects.
 
-Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, architecture explainers, repo analysis prompts, and automation recipes.
+Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, architecture explainers, repo analysis prompts, execution systems, and automation recipes.
 
 ## Repository Map
 
 - `docs/graphify.md` - Graphify setup, commands, and project workflow notes.
+- `docs/get-shit-done.md` - A practical execution system for turning messy work into finished outcomes.
 - `docs/llm-wiki.md` - LLM wiki concepts, structure, and usage patterns.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
+- `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
+- `templates/gsd-plan.md` - Template for a focused execution plan.
 - `templates/tool-note.md` - Standard template for documenting a new utility.
 - `templates/project-knowledge-map.md` - Template for recording how a project is documented.
 
@@ -18,6 +21,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - Tool setup steps and troubleshooting notes.
 - Reusable commands that you run across projects.
 - Prompts that produce consistently useful codebase summaries.
+- Execution workflows that help finish important work.
 - Comparison notes between similar tools.
 - Examples of generated outputs that are worth preserving.
 - Decisions about when to use a tool and when to avoid it.
