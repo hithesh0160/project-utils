@@ -1,0 +1,14 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local scratch files
+tmp/
+scratch/
+*.log
+
+# Generated exports
+exports/
+*.zip
