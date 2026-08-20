@@ -23,6 +23,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/react-vite-capacitor.md` - React, Vite, Capacitor, Firebase app workflow.
 - `docs/llm-wiki.md` - LLM Wiki (`Oshayr/LLM-Wiki`) plugin for autonomous knowledge management, research-on-miss, and local web UI.
 - `docs/lenis-smooth-scroll.md` - Lenis smooth scroll library setup, options, React adapter, and GSAP integration.
+- `docs/animate-ui.md` - Animate UI (`imskyleen/animate-ui`) animated React component library with shadcn/ui integration.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -63,6 +64,10 @@ This repo includes notes on [Get Shit Done](https://github.com/gsd-build/get-shi
 ## Lenis Smooth Scroll
 
 This repo includes notes on [Lenis](https://github.com/darkroomengineering/lenis), a free smooth scroll library for modern web applications. See `docs/lenis-smooth-scroll.md` for setup, API options, React adapter, and GSAP ScrollTrigger integration.
+
+## Animate UI
+
+This repo includes notes on [Animate UI](https://github.com/imskyleen/animate-ui), an open-source collection of animated components built with React, TypeScript, Tailwind CSS, and Motion (shadcn/ui compatible). See `docs/animate-ui.md` for setup and CLI usage.
 
 ## Naming Convention
 
