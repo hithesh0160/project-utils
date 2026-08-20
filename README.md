@@ -22,6 +22,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/docker-test-runners.md` - Dockerized test execution patterns.
 - `docs/react-vite-capacitor.md` - React, Vite, Capacitor, Firebase app workflow.
 - `docs/llm-wiki.md` - LLM Wiki (`Oshayr/LLM-Wiki`) plugin for autonomous knowledge management, research-on-miss, and local web UI.
+- `docs/lenis-smooth-scroll.md` - Lenis smooth scroll library setup, options, React adapter, and GSAP integration.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -58,6 +59,10 @@ This repo includes notes on [LLM Wiki](https://github.com/Oshayr/LLM-Wiki), an a
 ## Get Shit Done (GSD)
 
 This repo includes notes on [Get Shit Done](https://github.com/gsd-build/get-shit-done) ([open-gsd/gsd-core](https://github.com/open-gsd/gsd-core)), a spec-driven development and meta-prompting framework to eliminate context rot for AI agents. See `docs/get-shit-done.md` for workflow phases and setup.
+
+## Lenis Smooth Scroll
+
+This repo includes notes on [Lenis](https://github.com/darkroomengineering/lenis), a free smooth scroll library for modern web applications. See `docs/lenis-smooth-scroll.md` for setup, API options, React adapter, and GSAP ScrollTrigger integration.
 
 ## Naming Convention
 
