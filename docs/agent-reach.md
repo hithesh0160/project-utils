@@ -1,81 +1,132 @@
 # Agent Reach
 
-Agent reach is the practice of structuring a repo so AI agents can navigate it reliably without needing a human to explain the layout each time.
+Agent Reach gives AI agents one CLI to read and search the internet — Twitter, Reddit, YouTube, GitHub, LinkedIn, Bilibili, XiaoHongShu, V2EX, Xueqiu, and more. Zero API fees for most channels.
 
-A repo with good agent reach gives agents a clear entry point, consistent file structure, short self-contained docs, and explicit instructions in a root `AGENTS.md`.
+Source: https://github.com/Panniantong/agent-reach
 
-## Why It Matters
+## Best For
 
-Without agent reach:
-- Agents read random files and miss the important ones.
-- Agents hallucinate commands that do not exist in this project.
-- Context windows fill with noise before the agent finds the relevant content.
-- The same orientation work repeats every session.
+- Letting AI agents read tweets, Reddit threads, YouTube transcripts, GitHub repos, and web pages.
+- Searching across social platforms from one tool.
+- Feeding real-time internet content into agent workflows.
+- Replacing scattered scraping scripts with a single maintained CLI.
+- MCP server integration so compatible agents can call it directly.
 
-With agent reach:
-- An agent reads `AGENTS.md` and knows where everything is.
-- Each `docs/` file answers questions about one tool without needing other files.
-- Prompts and templates are findable in one step.
-- Sessions start productive immediately.
+## Install
 
-## What Good Agent Reach Looks Like
+Requires Python 3.10+.
 
-- `AGENTS.md` at the repo root with layout, navigation rules, and content conventions.
-- Short, self-contained files. Each doc covers one tool or concept completely.
-- Consistent file naming so an agent can predict where a file lives.
-- Checklists at the end of docs so agents can verify setup without guessing.
-- Clear separation between stable docs and temporary investigation notes.
-
-## This Repo's Agent Reach Setup
-
-```text
-AGENTS.md              — agent entry point, layout, navigation rules
-docs/                  — one file per tool or concept
-prompts/               — reusable LLM prompts
-templates/             — repeatable doc formats
-README.md              — human-readable index of all files
+```bash
+pip install agent-reach
 ```
 
-Navigation path for an agent:
-1. Read `AGENTS.md`.
-2. Read `README.md` for the full file index.
-3. Open the relevant `docs/` file.
-4. Use the checklist at the bottom of the doc to verify setup.
+Or with uv:
 
-## Adding Agent Reach To A New Repo
+```bash
+uv pip install agent-reach
+```
 
-1. Create `AGENTS.md` at the repo root.
-2. Write a short layout description covering all top-level directories.
-3. Add navigation rules: what to read first, how to find things, what not to assume.
-4. Add content conventions: how files are named, what belongs in each folder.
-5. Keep each doc short enough that an agent can read it in one pass.
-6. Test by asking an agent a question about the repo without giving any extra context.
+Verify:
 
-## Signs Agent Reach Is Working
+```bash
+reach doctor
+```
 
-- Agent finds the right doc without being told the filename.
-- Agent does not invent commands that are not in the docs.
-- Agent uses the checklist to verify its own work.
-- Agent updates `README.md` when adding a new file.
+## Common Commands
 
-## Signs Agent Reach Needs Work
+```bash
+# Read content from a URL
+reach read <url>
 
-- Agent asks "where is the doc for X?" when there is a clear naming convention.
-- Agent reads five files before finding the relevant one.
-- Agent suggests commands that only work in a different tool or version.
-- Agent duplicates content that already exists in a doc.
+# Search a platform
+reach search twitter "AI agents"
+reach search reddit "python async"
+reach search youtube "machine learning tutorial"
+reach search github "agent framework"
+reach search bilibili "编程教程"
+reach search xiaohongshu "tech review"
+
+# Health check — shows which channels work
+reach doctor
+
+# Install a skill for your agent
+reach skill install
+```
+
+## Supported Platforms
+
+| Platform     | Read | Search | Notes                        |
+|-------------|------|--------|------------------------------|
+| Twitter/X   | ✅   | ✅     | Cookie auth or OpenCLI       |
+| Reddit      | ✅   | ✅     | Works out of the box         |
+| YouTube     | ✅   | ✅     | Transcripts and metadata     |
+| GitHub      | ✅   | ✅     | Repos, issues, code          |
+| LinkedIn    | ✅   | —      | Cookie auth                  |
+| Bilibili    | ✅   | ✅     | Video info and transcripts   |
+| XiaoHongShu | ✅   | ✅     | Cookie auth                  |
+| V2EX        | ✅   | ✅     | Topics and replies           |
+| Xueqiu      | ✅   | ✅     | Finance/stock discussions    |
+| Web (any)   | ✅   | —      | Generic web page reading     |
+| RSS         | ✅   | —      | Feed parsing                 |
+| Exa Search  | —    | ✅     | Requires Exa API key         |
+
+## MCP Server
+
+Agent Reach includes an MCP server so compatible agents (Claude, Cursor, etc.) can call it as a tool:
+
+```bash
+reach mcp
+```
+
+Configure in your agent's MCP settings to expose read and search as callable tools.
+
+## Cookie Auth
+
+Some platforms (Twitter, XiaoHongShu, LinkedIn) need browser cookies for access. Agent Reach can extract cookies from your browser:
+
+```bash
+reach cookie-export <platform>
+```
+
+See the setup guides in the repo for platform-specific instructions:
+- `agent_reach/guides/setup-twitter.md`
+- `agent_reach/guides/setup-xiaohongshu.md`
+- `agent_reach/guides/setup-reddit.md`
+
+## Environment Variables
+
+Copy `.env.example` and set any needed keys:
+
+```bash
+# Optional — only needed for specific channels
+GROQ_API_KEY=       # For transcription features
+EXA_API_KEY=        # For Exa search channel
+```
+
+Most channels work with zero API keys.
+
+## Good Workflow
+
+1. Install with `pip install agent-reach`.
+2. Run `reach doctor` to see which channels are healthy.
+3. Set up cookie auth for platforms that need it.
+4. Use `reach read <url>` to test reading content.
+5. Use `reach search <platform> "query"` to test search.
+6. Connect via MCP for agent integration.
+7. Run `reach doctor` periodically to catch broken channels.
 
 ## Avoid When
 
-- The repo is a single-file script with no structure to navigate.
-- The team does not use AI agents and has no plans to.
-- The overhead of maintaining `AGENTS.md` is higher than the benefit.
+- You only need to read a single known URL once — `curl` or a browser is simpler.
+- You need write access to platforms (posting, commenting). Agent Reach is read-only.
+- You need authenticated API access with rate limit guarantees.
+- The target platform is not in the supported list.
 
 ## Checklist
 
-- `AGENTS.md` exists at the repo root.
-- Layout section covers all top-level directories.
-- Navigation rules tell the agent what to read first.
-- Content conventions match the actual file naming in the repo.
-- Each doc in `docs/` is self-contained.
-- `README.md` file index is current.
+- Python 3.10+ is installed.
+- `reach doctor` passes for the channels you need.
+- Cookie auth is configured for gated platforms.
+- MCP server is running if using agent integration.
+- `.env` is not committed to version control.
+- Channels are tested with real queries before relying on them.

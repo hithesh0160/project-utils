@@ -7,7 +7,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 ## Repository Map
 
 - `AGENTS.md` - Agent entry point with repo layout, navigation rules, and content conventions.
-- `docs/agent-reach.md` - Structuring repos so AI agents can navigate them reliably.
+- `docs/agent-reach.md` - Agent Reach CLI for reading and searching Twitter, Reddit, YouTube, GitHub, and more.
 - `docs/graphify.md` - Graphify setup, commands, and project workflow notes.
 - `docs/get-shit-done.md` - A practical execution system for turning messy work into finished outcomes.
 - `docs/ultracontext.md` - Shared context infrastructure for AI agents and coding sessions.
@@ -49,7 +49,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 
 ## Agent Reach
 
-This repo includes `AGENTS.md` at the root so AI agents (Gemini, Claude, Codex, etc.) can navigate it without extra instructions. See `docs/agent-reach.md` for the full concept and setup guide.
+This repo includes notes on [Agent Reach](https://github.com/Panniantong/Agent-Reach), a CLI that gives AI agents the ability to read and search Twitter, Reddit, YouTube, GitHub, and other platforms. See `docs/agent-reach.md` for setup, commands, and platform support.
 
 ## Naming Convention
 
