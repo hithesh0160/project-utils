@@ -21,7 +21,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/appium-android.md` - Android Appium test workflow.
 - `docs/docker-test-runners.md` - Dockerized test execution patterns.
 - `docs/react-vite-capacitor.md` - React, Vite, Capacitor, Firebase app workflow.
-- `docs/llm-wiki.md` - LLM wiki concepts, structure, and usage patterns.
+- `docs/llm-wiki.md` - LLM Wiki (`Oshayr/LLM-Wiki`) plugin for autonomous knowledge management, research-on-miss, and local web UI.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -50,6 +50,10 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 ## Agent Reach
 
 This repo includes notes on [Agent Reach](https://github.com/Panniantong/Agent-Reach), a CLI that gives AI agents the ability to read and search Twitter, Reddit, YouTube, GitHub, and other platforms. See `docs/agent-reach.md` for setup, commands, and platform support.
+
+## LLM Wiki
+
+This repo includes notes on [LLM Wiki](https://github.com/Oshayr/LLM-Wiki), an autonomous knowledge base plugin featuring research-on-miss, semantic search, local `.wiki/` storage, and a Wikipedia-style web UI. See `docs/llm-wiki.md` for commands, features, and setup.
 
 ## Naming Convention
 
