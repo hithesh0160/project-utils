@@ -34,6 +34,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/topoteretes-cognee.md` - Cognee (`topoteretes/cognee`) AI memory engine with hybrid vector search and semantic knowledge graphs.
 - `docs/microsoft-agent-lightning.md` - Agent Lightning (`microsoft/agent-lightning`) RL & prompt optimization framework for AI agents.
 - `docs/neilsonnn-image-blaster.md` - Image Blaster (`neilsonnn/image-blaster`) image-to-3D-world generative pipeline for Claude Code.
+- `docs/garrytan-gbrain.md` - GBrain (`garrytan/gbrain`) AI agent memory engine with self-wiring typed knowledge graphs by Garry Tan.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -118,6 +119,10 @@ This repo includes notes on [Agent Lightning](https://github.com/microsoft/agent
 ## Image Blaster
 
 This repo includes notes on [Image Blaster](https://github.com/neilsonnn/image-blaster), an image-to-3D-world generative pipeline for Claude Code integrating World Labs, Hunyuan 3D, and ElevenLabs. See `docs/neilsonnn-image-blaster.md` for details.
+
+## GBrain
+
+This repo includes notes on [GBrain](https://github.com/garrytan/gbrain), Garry Tan's persistent AI agent memory engine with self-wiring typed knowledge graphs and hybrid vector/BM25 search. See `docs/garrytan-gbrain.md` for setup and details.
 
 ## Naming Convention
 
