@@ -31,6 +31,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/different-ai-openwork.md` - OpenWork (`different-ai/openwork`) local-first desktop application and agent workspace.
 - `docs/huggingface-upskill.md` - Hugging Face Upskill (`huggingface/upskill`) skill generation, distillation, and evaluation tool.
 - `docs/skills-sh.md` - Skills.sh (`vercel-labs/skills`) open-source package manager and registry for AI agent skills.
+- `docs/topoteretes-cognee.md` - Cognee (`topoteretes/cognee`) AI memory engine with hybrid vector search and semantic knowledge graphs.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -103,6 +104,10 @@ This repo includes notes on [Hugging Face Upskill](https://github.com/huggingfac
 ## Skills.sh
 
 This repo includes notes on [Skills.sh](https://skills.sh) ([vercel-labs/skills](https://github.com/vercel-labs/skills)), an open-source package manager and registry for AI agent skills across 38+ platforms. See `docs/skills-sh.md` for CLI usage.
+
+## Cognee
+
+This repo includes notes on [Cognee](https://github.com/topoteretes/cognee), an open-source AI memory platform by Topoteretes using ECL pipelines and semantic knowledge graphs. See `docs/topoteretes-cognee.md` for python quickstart and architecture details.
 
 ## Naming Convention
 
