@@ -32,6 +32,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/huggingface-upskill.md` - Hugging Face Upskill (`huggingface/upskill`) skill generation, distillation, and evaluation tool.
 - `docs/skills-sh.md` - Skills.sh (`vercel-labs/skills`) open-source package manager and registry for AI agent skills.
 - `docs/topoteretes-cognee.md` - Cognee (`topoteretes/cognee`) AI memory engine with hybrid vector search and semantic knowledge graphs.
+- `docs/microsoft-agent-lightning.md` - Agent Lightning (`microsoft/agent-lightning`) RL & prompt optimization framework for AI agents.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -108,6 +109,10 @@ This repo includes notes on [Skills.sh](https://skills.sh) ([vercel-labs/skills]
 ## Cognee
 
 This repo includes notes on [Cognee](https://github.com/topoteretes/cognee), an open-source AI memory platform by Topoteretes using ECL pipelines and semantic knowledge graphs. See `docs/topoteretes-cognee.md` for python quickstart and architecture details.
+
+## Agent Lightning
+
+This repo includes notes on [Agent Lightning](https://github.com/microsoft/agent-lightning), Microsoft's framework for training and optimizing AI agents using Reinforcement Learning (RL) and Automatic Prompt Optimization (APO). See `docs/microsoft-agent-lightning.md` for setup and usage.
 
 ## Naming Convention
 
