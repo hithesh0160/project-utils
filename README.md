@@ -26,6 +26,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/animate-ui.md` - Animate UI (`imskyleen/animate-ui`) animated React component library with shadcn/ui integration.
 - `docs/inspira-ui.md` - Inspira UI (`unovue/inspira-ui`) Vue 3 & Nuxt 3 component library porting Aceternity & Magic UI.
 - `docs/free-for-dev.md` - Free for Dev (`free-for.dev`) curated catalog of SaaS, PaaS, DBaaS, and APIs with free tiers.
+- `docs/autoresearch.md` - Autoresearch (`karpathy/autoresearch`) autonomous ML research loop and experiment framework by Andrej Karpathy.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -78,6 +79,10 @@ This repo includes notes on [Inspira UI](https://github.com/unovue/inspira-ui), 
 ## Free for Dev
 
 This repo includes notes on [Free for Dev](https://free-for.dev) ([ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev)), a curated list of SaaS, PaaS, DBaaS, and APIs offering free tiers for developers. See `docs/free-for-dev.md` for categories and scope.
+
+## Autoresearch
+
+This repo includes notes on [Autoresearch](https://github.com/karpathy/autoresearch), Andrej Karpathy's autonomous ML research loop framework (`program.md`, `train.py`, `prepare.py`). See `docs/autoresearch.md` for workflow details.
 
 ## Naming Convention
 
