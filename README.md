@@ -27,6 +27,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/inspira-ui.md` - Inspira UI (`unovue/inspira-ui`) Vue 3 & Nuxt 3 component library porting Aceternity & Magic UI.
 - `docs/free-for-dev.md` - Free for Dev (`free-for.dev`) curated catalog of SaaS, PaaS, DBaaS, and APIs with free tiers.
 - `docs/autoresearch.md` - Autoresearch (`karpathy/autoresearch`) autonomous ML research loop and experiment framework by Andrej Karpathy.
+- `docs/voltagent-awesome-openclaw-skills.md` - Awesome OpenClaw Skills (`VoltAgent/awesome-openclaw-skills`) curated index of 5,000+ agent skills.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -83,6 +84,10 @@ This repo includes notes on [Free for Dev](https://free-for.dev) ([ripienaar/fre
 ## Autoresearch
 
 This repo includes notes on [Autoresearch](https://github.com/karpathy/autoresearch), Andrej Karpathy's autonomous ML research loop framework (`program.md`, `train.py`, `prepare.py`). See `docs/autoresearch.md` for workflow details.
+
+## Awesome OpenClaw Skills
+
+This repo includes notes on [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills), a curated catalog by VoltAgent indexing 5,000+ AI agent skills for OpenClaw. See `docs/voltagent-awesome-openclaw-skills.md` for categories and CLI usage.
 
 ## Naming Convention
 
