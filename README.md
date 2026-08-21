@@ -35,6 +35,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/microsoft-agent-lightning.md` - Agent Lightning (`microsoft/agent-lightning`) RL & prompt optimization framework for AI agents.
 - `docs/neilsonnn-image-blaster.md` - Image Blaster (`neilsonnn/image-blaster`) image-to-3D-world generative pipeline for Claude Code.
 - `docs/garrytan-gbrain.md` - GBrain (`garrytan/gbrain`) AI agent memory engine with self-wiring typed knowledge graphs by Garry Tan.
+- `docs/karpathy-nanochat.md` - nanochat (`karpathy/nanochat`) full-stack single-GPU ChatGPT training harness by Andrej Karpathy.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -123,6 +124,10 @@ This repo includes notes on [Image Blaster](https://github.com/neilsonnn/image-b
 ## GBrain
 
 This repo includes notes on [GBrain](https://github.com/garrytan/gbrain), Garry Tan's persistent AI agent memory engine with self-wiring typed knowledge graphs and hybrid vector/BM25 search. See `docs/garrytan-gbrain.md` for setup and details.
+
+## nanochat
+
+This repo includes notes on [nanochat](https://github.com/karpathy/nanochat), Andrej Karpathy's full-stack single-GPU ChatGPT training harness covering Tokenization, Pretraining, SFT, and GRPO RL. See `docs/karpathy-nanochat.md` for pipeline stages.
 
 ## Naming Convention
 
