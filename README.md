@@ -25,6 +25,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/lenis-smooth-scroll.md` - Lenis smooth scroll library setup, options, React adapter, and GSAP integration.
 - `docs/animate-ui.md` - Animate UI (`imskyleen/animate-ui`) animated React component library with shadcn/ui integration.
 - `docs/inspira-ui.md` - Inspira UI (`unovue/inspira-ui`) Vue 3 & Nuxt 3 component library porting Aceternity & Magic UI.
+- `docs/free-for-dev.md` - Free for Dev (`free-for.dev`) curated catalog of SaaS, PaaS, DBaaS, and APIs with free tiers.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -73,6 +74,10 @@ This repo includes notes on [Animate UI](https://github.com/imskyleen/animate-ui
 ## Inspira UI
 
 This repo includes notes on [Inspira UI](https://github.com/unovue/inspira-ui), a free Vue 3 & Nuxt 3 component library porting Aceternity UI and Magic UI design systems to Vue. See `docs/inspira-ui.md` for setup and CLI commands.
+
+## Free for Dev
+
+This repo includes notes on [Free for Dev](https://free-for.dev) ([ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev)), a curated list of SaaS, PaaS, DBaaS, and APIs offering free tiers for developers. See `docs/free-for-dev.md` for categories and scope.
 
 ## Naming Convention
 
