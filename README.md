@@ -29,6 +29,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/autoresearch.md` - Autoresearch (`karpathy/autoresearch`) autonomous ML research loop and experiment framework by Andrej Karpathy.
 - `docs/voltagent-awesome-openclaw-skills.md` - Awesome OpenClaw Skills (`VoltAgent/awesome-openclaw-skills`) curated index of 5,000+ agent skills.
 - `docs/different-ai-openwork.md` - OpenWork (`different-ai/openwork`) local-first desktop application and agent workspace.
+- `docs/huggingface-upskill.md` - Hugging Face Upskill (`huggingface/upskill`) skill generation, distillation, and evaluation tool.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -93,6 +94,10 @@ This repo includes notes on [Awesome OpenClaw Skills](https://github.com/VoltAge
 ## OpenWork
 
 This repo includes notes on [OpenWork](https://github.com/different-ai/openwork), an open-source, local-first desktop application and agent workspace by Different AI. See `docs/different-ai-openwork.md` for details.
+
+## Hugging Face Upskill
+
+This repo includes notes on [Hugging Face Upskill](https://github.com/huggingface/upskill), a tool to distill teacher model traces into reusable agent skills (`SKILL.md`) for student models. See `docs/huggingface-upskill.md` for details.
 
 ## Naming Convention
 
