@@ -28,6 +28,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/free-for-dev.md` - Free for Dev (`free-for.dev`) curated catalog of SaaS, PaaS, DBaaS, and APIs with free tiers.
 - `docs/autoresearch.md` - Autoresearch (`karpathy/autoresearch`) autonomous ML research loop and experiment framework by Andrej Karpathy.
 - `docs/voltagent-awesome-openclaw-skills.md` - Awesome OpenClaw Skills (`VoltAgent/awesome-openclaw-skills`) curated index of 5,000+ agent skills.
+- `docs/different-ai-openwork.md` - OpenWork (`different-ai/openwork`) local-first desktop application and agent workspace.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -88,6 +89,10 @@ This repo includes notes on [Autoresearch](https://github.com/karpathy/autoresea
 ## Awesome OpenClaw Skills
 
 This repo includes notes on [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills), a curated catalog by VoltAgent indexing 5,000+ AI agent skills for OpenClaw. See `docs/voltagent-awesome-openclaw-skills.md` for categories and CLI usage.
+
+## OpenWork
+
+This repo includes notes on [OpenWork](https://github.com/different-ai/openwork), an open-source, local-first desktop application and agent workspace by Different AI. See `docs/different-ai-openwork.md` for details.
 
 ## Naming Convention
 
