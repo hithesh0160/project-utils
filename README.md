@@ -36,6 +36,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/neilsonnn-image-blaster.md` - Image Blaster (`neilsonnn/image-blaster`) image-to-3D-world generative pipeline for Claude Code.
 - `docs/garrytan-gbrain.md` - GBrain (`garrytan/gbrain`) AI agent memory engine with self-wiring typed knowledge graphs by Garry Tan.
 - `docs/karpathy-nanochat.md` - nanochat (`karpathy/nanochat`) full-stack single-GPU ChatGPT training harness by Andrej Karpathy.
+- `docs/dietrichgebert-ponytail.md` - Ponytail (`DietrichGebert/ponytail`) anti-over-engineering decision ladder skill for AI agents.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -128,6 +129,10 @@ This repo includes notes on [GBrain](https://github.com/garrytan/gbrain), Garry 
 ## nanochat
 
 This repo includes notes on [nanochat](https://github.com/karpathy/nanochat), Andrej Karpathy's full-stack single-GPU ChatGPT training harness covering Tokenization, Pretraining, SFT, and GRPO RL. See `docs/karpathy-nanochat.md` for pipeline stages.
+
+## Ponytail
+
+This repo includes notes on [Ponytail](https://github.com/DietrichGebert/ponytail), DietrichGebert's anti-over-engineering skill for AI coding agents enforcing a 7-step Decision Ladder. See `docs/dietrichgebert-ponytail.md` for rules and levels.
 
 ## Naming Convention
 
