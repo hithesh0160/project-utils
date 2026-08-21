@@ -33,6 +33,7 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 - `docs/skills-sh.md` - Skills.sh (`vercel-labs/skills`) open-source package manager and registry for AI agent skills.
 - `docs/topoteretes-cognee.md` - Cognee (`topoteretes/cognee`) AI memory engine with hybrid vector search and semantic knowledge graphs.
 - `docs/microsoft-agent-lightning.md` - Agent Lightning (`microsoft/agent-lightning`) RL & prompt optimization framework for AI agents.
+- `docs/neilsonnn-image-blaster.md` - Image Blaster (`neilsonnn/image-blaster`) image-to-3D-world generative pipeline for Claude Code.
 - `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
@@ -113,6 +114,10 @@ This repo includes notes on [Cognee](https://github.com/topoteretes/cognee), an 
 ## Agent Lightning
 
 This repo includes notes on [Agent Lightning](https://github.com/microsoft/agent-lightning), Microsoft's framework for training and optimizing AI agents using Reinforcement Learning (RL) and Automatic Prompt Optimization (APO). See `docs/microsoft-agent-lightning.md` for setup and usage.
+
+## Image Blaster
+
+This repo includes notes on [Image Blaster](https://github.com/neilsonnn/image-blaster), an image-to-3D-world generative pipeline for Claude Code integrating World Labs, Hunyuan 3D, and ElevenLabs. See `docs/neilsonnn-image-blaster.md` for details.
 
 ## Naming Convention
 
