@@ -1,0 +1,336 @@
+{
+  "repository": "project-utils",
+  "description": "Curated collection of tool notes, prompts, and templates for software projects",
+  "version": "1.0.0",
+  "last_updated": "2026-08-21",
+  "for_ai_agents": true,
+  "entry_points": {
+    "primary": "AGENTS.md",
+    "human_readable": "README.md",
+    "quick_lookup": "MANIFEST.json"
+  },
+  "categories": {
+    "agents": {
+      "frameworks": {
+        "description": "Agent orchestration, execution control, workspaces",
+        "tools": [
+          {
+            "name": "CrewAI LLM Hooks",
+            "file": "docs/agents/frameworks/crewai-llm-hooks.md",
+            "tags": ["hooks", "llm", "crewai", "interception", "monitoring"],
+            "use_cases": ["iteration_limits", "approval_gates", "response_sanitization", "debug_logging"]
+          },
+          {
+            "name": "Get Shit Done",
+            "file": "docs/agents/frameworks/get-shit-done.md",
+            "tags": ["gsd", "spec-driven", "workflow", "context"],
+            "use_cases": ["task_management", "context_preservation", "execution_framework"]
+          },
+          {
+            "name": "OpenWork",
+            "file": "docs/agents/frameworks/different-ai-openwork.md",
+            "tags": ["desktop", "workspace", "local-first"],
+            "use_cases": ["agent_workspace", "local_development"]
+          }
+        ]
+      },
+      "memory": {
+        "description": "Memory engines, knowledge graphs, context management",
+        "tools": [
+          {
+            "name": "GBrain",
+            "file": "docs/agents/memory/garrytan-gbrain.md",
+            "tags": ["memory", "knowledge-graph", "postgresql", "mcp"],
+            "use_cases": ["long_term_memory", "entity_relationships", "typed_knowledge"]
+          },
+          {
+            "name": "Cognee",
+            "file": "docs/agents/memory/topoteretes-cognee.md",
+            "tags": ["memory", "vector-search", "semantic", "knowledge-graph"],
+            "use_cases": ["hybrid_search", "semantic_memory", "knowledge_extraction"]
+          },
+          {
+            "name": "LLM Wiki",
+            "file": "docs/agents/memory/llm-wiki.md",
+            "tags": ["wiki", "knowledge-base", "research", "autonomous"],
+            "use_cases": ["knowledge_management", "research_on_miss", "documentation"]
+          },
+          {
+            "name": "UltraContext",
+            "file": "docs/agents/memory/ultracontext.md",
+            "tags": ["context", "shared", "infrastructure"],
+            "use_cases": ["shared_context", "context_management"]
+          }
+        ]
+      },
+      "skills": {
+        "description": "Skill systems, registries, procedural knowledge",
+        "tools": [
+          {
+            "name": "Skills.sh",
+            "file": "docs/agents/skills/skills-sh.md",
+            "tags": ["skills", "registry", "package-manager", "npm"],
+            "use_cases": ["skill_discovery", "skill_installation", "skill_management"]
+          },
+          {
+            "name": "Awesome OpenClaw Skills",
+            "file": "docs/agents/skills/voltagent-awesome-openclaw-skills.md",
+            "tags": ["skills", "catalog", "openclaw", "index"],
+            "use_cases": ["skill_discovery", "skill_catalog"]
+          },
+          {
+            "name": "Hugging Face Upskill",
+            "file": "docs/agents/skills/huggingface-upskill.md",
+            "tags": ["skills", "generation", "distillation", "huggingface"],
+            "use_cases": ["skill_generation", "skill_training", "model_distillation"]
+          },
+          {
+            "name": "Ponytail",
+            "file": "docs/agents/skills/dietrichgebert-ponytail.md",
+            "tags": ["skills", "anti-pattern", "decision-ladder", "simplicity"],
+            "use_cases": ["prevent_over_engineering", "decision_making"]
+          }
+        ]
+      },
+      "capabilities": {
+        "description": "Agent tools, capabilities, specialized functions",
+        "tools": [
+          {
+            "name": "Agent Reach",
+            "file": "docs/agents/capabilities/agent-reach.md",
+            "tags": ["internet", "search", "twitter", "reddit", "youtube", "mcp"],
+            "use_cases": ["social_media_access", "web_scraping", "content_retrieval"]
+          },
+          {
+            "name": "Autoresearch",
+            "file": "docs/agents/capabilities/autoresearch.md",
+            "tags": ["research", "ml", "autonomous", "karpathy"],
+            "use_cases": ["ml_research", "experiment_loops", "autonomous_research"]
+          },
+          {
+            "name": "Agent Lightning",
+            "file": "docs/agents/capabilities/microsoft-agent-lightning.md",
+            "tags": ["rl", "training", "optimization", "microsoft"],
+            "use_cases": ["agent_training", "reinforcement_learning", "prompt_optimization"]
+          }
+        ]
+      }
+    },
+    "llm-inference": {
+      "description": "LLM serving optimization, routing, caching techniques",
+      "tools": [
+        {
+          "name": "KV Caching",
+          "file": "docs/llm-inference/kv-caching.md",
+          "tags": ["caching", "optimization", "inference", "transformers"],
+          "use_cases": ["speed_optimization", "memory_efficiency", "autoregressive_generation"]
+        },
+        {
+          "name": "PagedAttention",
+          "file": "docs/llm-inference/paged-attention.md",
+          "tags": ["memory", "optimization", "vllm", "tgi", "attention"],
+          "use_cases": ["memory_optimization", "long_context", "parallel_sampling"]
+        },
+        {
+          "name": "Omniroute",
+          "file": "docs/llm-inference/omniroute.md",
+          "tags": ["gateway", "routing", "fallback", "mcp"],
+          "use_cases": ["model_routing", "failover", "multi_provider"]
+        }
+      ]
+    },
+    "testing": {
+      "description": "Test automation frameworks across languages",
+      "tools": [
+        {
+          "name": "Allure Reports",
+          "file": "docs/testing/allure-reports.md",
+          "tags": ["reporting", "visualization", "test-results"],
+          "use_cases": ["test_reporting", "result_visualization"]
+        },
+        {
+          "name": "Appium Android",
+          "file": "docs/testing/appium-android.md",
+          "tags": ["mobile", "android", "appium", "automation"],
+          "use_cases": ["mobile_testing", "android_automation"]
+        },
+        {
+          "name": "Docker Test Runners",
+          "file": "docs/testing/docker-test-runners.md",
+          "tags": ["docker", "containers", "test-execution"],
+          "use_cases": ["containerized_testing", "isolated_environments"]
+        },
+        {
+          "name": "Java Selenium TestNG",
+          "file": "docs/testing/java-selenium-testng.md",
+          "tags": ["java", "selenium", "testng", "web-automation"],
+          "use_cases": ["java_web_testing", "selenium_automation"]
+        },
+        {
+          "name": "Playwright",
+          "file": "docs/testing/playwright.md",
+          "tags": ["playwright", "browser", "automation", "mcp"],
+          "use_cases": ["browser_automation", "e2e_testing", "web_scraping"]
+        },
+        {
+          "name": "Python FastAPI Pytest",
+          "file": "docs/testing/python-fastapi-pytest.md",
+          "tags": ["python", "fastapi", "pytest", "api-testing"],
+          "use_cases": ["python_testing", "api_testing", "fastapi_development"]
+        }
+      ]
+    },
+    "ui-components": {
+      "description": "Frontend UI libraries and animation",
+      "tools": [
+        {
+          "name": "Animate UI",
+          "file": "docs/ui-components/animate-ui.md",
+          "tags": ["react", "animation", "components", "shadcn"],
+          "use_cases": ["animated_components", "react_ui", "motion_design"]
+        },
+        {
+          "name": "Inspira UI",
+          "file": "docs/ui-components/inspira-ui.md",
+          "tags": ["vue", "nuxt", "components", "aceternity"],
+          "use_cases": ["vue_components", "nuxt_ui", "design_system"]
+        },
+        {
+          "name": "Lenis Smooth Scroll",
+          "file": "docs/ui-components/lenis-smooth-scroll.md",
+          "tags": ["scroll", "animation", "gsap", "smooth"],
+          "use_cases": ["smooth_scrolling", "scroll_animation", "parallax"]
+        }
+      ]
+    },
+    "devops-infra": {
+      "description": "CI/CD, notifications, infrastructure",
+      "tools": [
+        {
+          "name": "GitHub Actions",
+          "file": "docs/devops-infra/github-actions.md",
+          "tags": ["ci-cd", "github", "automation", "workflows"],
+          "use_cases": ["ci_cd", "automation", "scheduled_jobs", "artifact_management"]
+        },
+        {
+          "name": "Telegram Automation",
+          "file": "docs/devops-infra/telegram-automation.md",
+          "tags": ["telegram", "notifications", "bot", "alerts"],
+          "use_cases": ["notifications", "alerts", "bot_integration"]
+        },
+        {
+          "name": "FreeDomain",
+          "file": "docs/devops-infra/digitalplatdev-freedomain.md",
+          "tags": ["domain", "dns", "free", "registration"],
+          "use_cases": ["free_domains", "dns_management", "domain_registration"]
+        }
+      ]
+    },
+    "dev-stacks": {
+      "description": "Complete development stacks",
+      "tools": [
+        {
+          "name": "React Vite Capacitor",
+          "file": "docs/dev-stacks/react-vite-capacitor.md",
+          "tags": ["react", "vite", "capacitor", "mobile", "firebase"],
+          "use_cases": ["mobile_app", "hybrid_app", "react_native_alternative"]
+        },
+        {
+          "name": "nanochat",
+          "file": "docs/dev-stacks/karpathy-nanochat.md",
+          "tags": ["llm", "training", "chatgpt", "karpathy", "rl"],
+          "use_cases": ["llm_training", "chat_model", "gpu_training"]
+        }
+      ]
+    },
+    "analysis-docs": {
+      "description": "Tools for understanding and documenting codebases",
+      "tools": [
+        {
+          "name": "Graphify",
+          "file": "docs/analysis-docs/graphify.md",
+          "tags": ["graph", "codebase", "analysis", "visualization"],
+          "use_cases": ["codebase_analysis", "architecture_visualization", "dependency_mapping"]
+        },
+        {
+          "name": "Image Blaster",
+          "file": "docs/analysis-docs/neilsonnn-image-blaster.md",
+          "tags": ["3d", "generative", "image-to-world", "claude"],
+          "use_cases": ["3d_generation", "image_to_3d", "world_generation"]
+        }
+      ]
+    },
+    "resources": {
+      "description": "Meta-resources, catalogs, evaluation checklists",
+      "tools": [
+        {
+          "name": "Free for Dev",
+          "file": "docs/resources/free-for-dev.md",
+          "tags": ["free", "saas", "paas", "catalog", "developer-tools"],
+          "use_cases": ["finding_free_tools", "cost_optimization", "developer_resources"]
+        },
+        {
+          "name": "Tool Evaluation",
+          "file": "docs/resources/tool-evaluation.md",
+          "tags": ["evaluation", "checklist", "decision", "meta"],
+          "use_cases": ["tool_selection", "evaluation_framework"]
+        }
+      ]
+    }
+  },
+  "prompts": [
+    {
+      "name": "Get Shit Done",
+      "file": "prompts/get-shit-done.md",
+      "tags": ["planning", "execution", "unblocking", "finishing"],
+      "use_cases": ["task_planning", "overcoming_blockers", "project_completion"]
+    },
+    {
+      "name": "Graphify Analysis",
+      "file": "prompts/graphify-analysis.md",
+      "tags": ["codebase", "analysis", "graph", "architecture"],
+      "use_cases": ["codebase_understanding", "architecture_review"]
+    }
+  ],
+  "templates": [
+    {
+      "name": "Tool Note",
+      "file": "templates/tool-note.md",
+      "description": "Standard template for documenting a new utility",
+      "use_cases": ["documenting_tools", "knowledge_capture"]
+    },
+    {
+      "name": "GSD Plan",
+      "file": "templates/gsd-plan.md",
+      "description": "Template for a focused execution plan",
+      "use_cases": ["execution_planning", "task_organization"]
+    },
+    {
+      "name": "Project Knowledge Map",
+      "file": "templates/project-knowledge-map.md",
+      "description": "Template for recording how a project is documented",
+      "use_cases": ["documentation_mapping", "knowledge_organization"]
+    }
+  ],
+  "query_examples": {
+    "by_use_case": {
+      "long_term_memory": ["docs/agents/memory/garrytan-gbrain.md", "docs/agents/memory/topoteretes-cognee.md"],
+      "browser_automation": ["docs/testing/playwright.md"],
+      "speed_optimization": ["docs/llm-inference/kv-caching.md", "docs/llm-inference/paged-attention.md"],
+      "ci_cd": ["docs/devops-infra/github-actions.md"],
+      "mobile_testing": ["docs/testing/appium-android.md"],
+      "codebase_analysis": ["docs/analysis-docs/graphify.md"]
+    },
+    "by_tag": {
+      "mcp": ["docs/agents/frameworks/crewai-llm-hooks.md", "docs/agents/memory/garrytan-gbrain.md", "docs/agents/capabilities/agent-reach.md", "docs/llm-inference/omniroute.md", "docs/testing/playwright.md"],
+      "memory": ["docs/agents/memory/garrytan-gbrain.md", "docs/agents/memory/topoteretes-cognee.md", "docs/llm-inference/paged-attention.md"],
+      "optimization": ["docs/llm-inference/kv-caching.md", "docs/llm-inference/paged-attention.md"]
+    }
+  },
+  "related_tools": {
+    "kv-caching_with": ["paged-attention"],
+    "crewai-llm-hooks_with": ["agent-reach", "gbrain"],
+    "playwright_with": ["allure-reports", "docker-test-runners"],
+    "graphify_with": ["ultracontext"]
+  }
+}

@@ -2,43 +2,97 @@
 
 This repository collects reusable notes, workflows, prompts, and evaluation checklists for tools that help understand, document, and maintain software projects.
 
-Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, architecture explainers, repo analysis prompts, execution systems, and automation recipes.
+Use it for utilities such as AI agents, LLM inference optimization, test automation, codebase analysis, and development workflows.
 
 ## Repository Map
 
+### Core Files
 - `AGENTS.md` - Agent entry point with repo layout, navigation rules, and content conventions.
-- `docs/agent-reach.md` - Agent Reach CLI for reading and searching Twitter, Reddit, YouTube, GitHub, and more.
-- `docs/graphify.md` - Graphify setup, commands, and project workflow notes.
-- `docs/get-shit-done.md` - Get Shit Done (`gsd-build/get-shit-done` / `open-gsd/gsd-core`) spec-driven framework to eliminate context rot.
-- `docs/ultracontext.md` - Shared context infrastructure for AI agents and coding sessions.
-- `docs/omniroute.md` - AI gateway notes for one endpoint, routing, fallback, MCP, and model providers.
-- `docs/github-actions.md` - CI, scheduled jobs, artifacts, and repo automation patterns.
-- `docs/python-fastapi-pytest.md` - Python service and testing stack notes.
-- `docs/allure-reports.md` - Allure test report generation and publishing.
-- `docs/telegram-automation.md` - Telegram bot notifications from scripts and CI.
-- `docs/java-selenium-testng.md` - Maven, Selenium, and TestNG automation setup.
-- `docs/playwright.md` - Playwright browser automation and MCP notes.
-- `docs/appium-android.md` - Android Appium test workflow.
-- `docs/docker-test-runners.md` - Dockerized test execution patterns.
-- `docs/react-vite-capacitor.md` - React, Vite, Capacitor, Firebase app workflow.
-- `docs/llm-wiki.md` - LLM Wiki (`Oshayr/LLM-Wiki`) plugin for autonomous knowledge management, research-on-miss, and local web UI.
-- `docs/lenis-smooth-scroll.md` - Lenis smooth scroll library setup, options, React adapter, and GSAP integration.
-- `docs/animate-ui.md` - Animate UI (`imskyleen/animate-ui`) animated React component library with shadcn/ui integration.
-- `docs/inspira-ui.md` - Inspira UI (`unovue/inspira-ui`) Vue 3 & Nuxt 3 component library porting Aceternity & Magic UI.
-- `docs/free-for-dev.md` - Free for Dev (`free-for.dev`) curated catalog of SaaS, PaaS, DBaaS, and APIs with free tiers.
-- `docs/autoresearch.md` - Autoresearch (`karpathy/autoresearch`) autonomous ML research loop and experiment framework by Andrej Karpathy.
-- `docs/voltagent-awesome-openclaw-skills.md` - Awesome OpenClaw Skills (`VoltAgent/awesome-openclaw-skills`) curated index of 5,000+ agent skills.
-- `docs/different-ai-openwork.md` - OpenWork (`different-ai/openwork`) local-first desktop application and agent workspace.
-- `docs/huggingface-upskill.md` - Hugging Face Upskill (`huggingface/upskill`) skill generation, distillation, and evaluation tool.
-- `docs/skills-sh.md` - Skills.sh (`vercel-labs/skills`) open-source package manager and registry for AI agent skills.
-- `docs/topoteretes-cognee.md` - Cognee (`topoteretes/cognee`) AI memory engine with hybrid vector search and semantic knowledge graphs.
-- `docs/microsoft-agent-lightning.md` - Agent Lightning (`microsoft/agent-lightning`) RL & prompt optimization framework for AI agents.
-- `docs/neilsonnn-image-blaster.md` - Image Blaster (`neilsonnn/image-blaster`) image-to-3D-world generative pipeline for Claude Code.
-- `docs/garrytan-gbrain.md` - GBrain (`garrytan/gbrain`) AI agent memory engine with self-wiring typed knowledge graphs by Garry Tan.
-- `docs/karpathy-nanochat.md` - nanochat (`karpathy/nanochat`) full-stack single-GPU ChatGPT training harness by Andrej Karpathy.
-- `docs/dietrichgebert-ponytail.md` - Ponytail (`DietrichGebert/ponytail`) anti-over-engineering decision ladder skill for AI agents.
-- `docs/digitalplatdev-freedomain.md` - FreeDomain (`DigitalPlatDev/FreeDomain`) open-source free domain registration and DNS service.
-- `docs/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
+- `QUICK_START.md` - Fast entry point for AI agents with common queries and example workflows.
+- `MANIFEST.json` - Structured index with tags, use cases, and tool relationships for programmatic access.
+
+### AI Agents (`docs/agents/`)
+
+#### Agent Frameworks (`docs/agents/frameworks/`)
+Agent orchestration, execution control, and workspaces.
+
+- `docs/agents/frameworks/crewai-llm-hooks.md` - CrewAI LLM Hooks for intercepting and controlling language model interactions.
+- `docs/agents/frameworks/get-shit-done.md` - Get Shit Done (`gsd-build/get-shit-done` / `open-gsd/gsd-core`) spec-driven framework to eliminate context rot.
+- `docs/agents/frameworks/different-ai-openwork.md` - OpenWork (`different-ai/openwork`) local-first desktop application and agent workspace.
+
+#### Agent Memory (`docs/agents/memory/`)
+Memory engines, knowledge graphs, and context management.
+
+- `docs/agents/memory/garrytan-gbrain.md` - GBrain (`garrytan/gbrain`) AI agent memory engine with self-wiring typed knowledge graphs by Garry Tan.
+- `docs/agents/memory/topoteretes-cognee.md` - Cognee (`topoteretes/cognee`) AI memory engine with hybrid vector search and semantic knowledge graphs.
+- `docs/agents/memory/llm-wiki.md` - LLM Wiki (`Oshayr/LLM-Wiki`) plugin for autonomous knowledge management, research-on-miss, and local web UI.
+- `docs/agents/memory/ultracontext.md` - Shared context infrastructure for AI agents and coding sessions.
+
+#### Agent Skills (`docs/agents/skills/`)
+Skill systems, registries, and procedural knowledge.
+
+- `docs/agents/skills/skills-sh.md` - Skills.sh (`vercel-labs/skills`) open-source package manager and registry for AI agent skills.
+- `docs/agents/skills/voltagent-awesome-openclaw-skills.md` - Awesome OpenClaw Skills (`VoltAgent/awesome-openclaw-skills`) curated index of 5,000+ agent skills.
+- `docs/agents/skills/huggingface-upskill.md` - Hugging Face Upskill (`huggingface/upskill`) skill generation, distillation, and evaluation tool.
+- `docs/agents/skills/dietrichgebert-ponytail.md` - Ponytail (`DietrichGebert/ponytail`) anti-over-engineering decision ladder skill for AI agents.
+
+#### Agent Capabilities (`docs/agents/capabilities/`)
+Agent tools, capabilities, and specialized functions.
+
+- `docs/agents/capabilities/agent-reach.md` - Agent Reach CLI for reading and searching Twitter, Reddit, YouTube, GitHub, and more.
+- `docs/agents/capabilities/autoresearch.md` - Autoresearch (`karpathy/autoresearch`) autonomous ML research loop and experiment framework by Andrej Karpathy.
+- `docs/agents/capabilities/microsoft-agent-lightning.md` - Agent Lightning (`microsoft/agent-lightning`) RL & prompt optimization framework for AI agents.
+
+### LLM Inference (`docs/llm-inference/`)
+LLM serving optimization, routing, and caching techniques.
+
+- `docs/llm-inference/kv-caching.md` - KV (Key-Value) caching fundamentals for optimizing transformer inference by storing attention states.
+- `docs/llm-inference/paged-attention.md` - PagedAttention memory optimization for LLM inference with block-based KV cache management.
+- `docs/llm-inference/omniroute.md` - AI gateway notes for one endpoint, routing, fallback, MCP, and model providers.
+
+### Testing (`docs/testing/`)
+Test automation frameworks across languages.
+
+- `docs/testing/allure-reports.md` - Allure test report generation and publishing.
+- `docs/testing/appium-android.md` - Android Appium test workflow.
+- `docs/testing/docker-test-runners.md` - Dockerized test execution patterns.
+- `docs/testing/java-selenium-testng.md` - Maven, Selenium, and TestNG automation setup.
+- `docs/testing/playwright.md` - Playwright browser automation and MCP notes.
+- `docs/testing/python-fastapi-pytest.md` - Python service and testing stack notes.
+
+### UI Components (`docs/ui-components/`)
+Frontend UI libraries and animation.
+
+- `docs/ui-components/animate-ui.md` - Animate UI (`imskyleen/animate-ui`) animated React component library with shadcn/ui integration.
+- `docs/ui-components/inspira-ui.md` - Inspira UI (`unovue/inspira-ui`) Vue 3 & Nuxt 3 component library porting Aceternity & Magic UI.
+- `docs/ui-components/lenis-smooth-scroll.md` - Lenis smooth scroll library setup, options, React adapter, and GSAP integration.
+
+### DevOps & Infrastructure (`docs/devops-infra/`)
+CI/CD, notifications, and infrastructure.
+
+- `docs/devops-infra/github-actions.md` - CI, scheduled jobs, artifacts, and repo automation patterns.
+- `docs/devops-infra/telegram-automation.md` - Telegram bot notifications from scripts and CI.
+- `docs/devops-infra/digitalplatdev-freedomain.md` - FreeDomain (`DigitalPlatDev/FreeDomain`) open-source free domain registration and DNS service.
+
+### Development Stacks (`docs/dev-stacks/`)
+Complete development stacks.
+
+- `docs/dev-stacks/react-vite-capacitor.md` - React, Vite, Capacitor, Firebase app workflow.
+- `docs/dev-stacks/karpathy-nanochat.md` - nanochat (`karpathy/nanochat`) full-stack single-GPU ChatGPT training harness by Andrej Karpathy.
+
+### Analysis & Documentation (`docs/analysis-docs/`)
+Tools for understanding and documenting codebases.
+
+- `docs/analysis-docs/graphify.md` - Graphify setup, commands, and project workflow notes.
+- `docs/analysis-docs/neilsonnn-image-blaster.md` - Image Blaster (`neilsonnn/image-blaster`) image-to-3D-world generative pipeline for Claude Code.
+
+### Resources (`docs/resources/`)
+Meta-resources, catalogs, and evaluation checklists.
+
+- `docs/resources/free-for-dev.md` - Free for Dev (`free-for.dev`) curated catalog of SaaS, PaaS, DBaaS, and APIs with free tiers.
+- `docs/resources/tool-evaluation.md` - Checklist for deciding whether a tool is worth keeping.
+
+### Prompts & Templates
 - `prompts/get-shit-done.md` - Prompts for planning, unblocking, and finishing work.
 - `prompts/graphify-analysis.md` - Reusable prompts for graph-based codebase analysis.
 - `templates/gsd-plan.md` - Template for a focused execution plan.
@@ -57,96 +111,33 @@ Use it for utilities such as Graphify, LLM-generated wikis, codebase maps, archi
 
 ## Suggested Workflow
 
-1. Add one note per tool in `docs/`.
+1. Add one note per tool in `docs/<category>/`.
 2. Keep reusable prompts in `prompts/`.
 3. Store repeatable formats in `templates/`.
 4. Add project-specific examples only when they teach a reusable pattern.
 5. Review notes after each real project use and update what actually worked.
-
-## Agent Reach
-
-This repo includes notes on [Agent Reach](https://github.com/Panniantong/Agent-Reach), a CLI that gives AI agents the ability to read and search Twitter, Reddit, YouTube, GitHub, and other platforms. See `docs/agent-reach.md` for setup, commands, and platform support.
-
-## LLM Wiki
-
-This repo includes notes on [LLM Wiki](https://github.com/Oshayr/LLM-Wiki), an autonomous knowledge base plugin featuring research-on-miss, semantic search, local `.wiki/` storage, and a Wikipedia-style web UI. See `docs/llm-wiki.md` for commands, features, and setup.
-
-## Get Shit Done (GSD)
-
-This repo includes notes on [Get Shit Done](https://github.com/gsd-build/get-shit-done) ([open-gsd/gsd-core](https://github.com/open-gsd/gsd-core)), a spec-driven development and meta-prompting framework to eliminate context rot for AI agents. See `docs/get-shit-done.md` for workflow phases and setup.
-
-## Lenis Smooth Scroll
-
-This repo includes notes on [Lenis](https://github.com/darkroomengineering/lenis), a free smooth scroll library for modern web applications. See `docs/lenis-smooth-scroll.md` for setup, API options, React adapter, and GSAP ScrollTrigger integration.
-
-## Animate UI
-
-This repo includes notes on [Animate UI](https://github.com/imskyleen/animate-ui), an open-source collection of animated components built with React, TypeScript, Tailwind CSS, and Motion (shadcn/ui compatible). See `docs/animate-ui.md` for setup and CLI usage.
-
-## Inspira UI
-
-This repo includes notes on [Inspira UI](https://github.com/unovue/inspira-ui), a free Vue 3 & Nuxt 3 component library porting Aceternity UI and Magic UI design systems to Vue. See `docs/inspira-ui.md` for setup and CLI commands.
-
-## Free for Dev
-
-This repo includes notes on [Free for Dev](https://free-for.dev) ([ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev)), a curated list of SaaS, PaaS, DBaaS, and APIs offering free tiers for developers. See `docs/free-for-dev.md` for categories and scope.
-
-## Autoresearch
-
-This repo includes notes on [Autoresearch](https://github.com/karpathy/autoresearch), Andrej Karpathy's autonomous ML research loop framework (`program.md`, `train.py`, `prepare.py`). See `docs/autoresearch.md` for workflow details.
-
-## Awesome OpenClaw Skills
-
-This repo includes notes on [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills), a curated catalog by VoltAgent indexing 5,000+ AI agent skills for OpenClaw. See `docs/voltagent-awesome-openclaw-skills.md` for categories and CLI usage.
-
-## OpenWork
-
-This repo includes notes on [OpenWork](https://github.com/different-ai/openwork), an open-source, local-first desktop application and agent workspace by Different AI. See `docs/different-ai-openwork.md` for details.
-
-## Hugging Face Upskill
-
-This repo includes notes on [Hugging Face Upskill](https://github.com/huggingface/upskill), a tool to distill teacher model traces into reusable agent skills (`SKILL.md`) for student models. See `docs/huggingface-upskill.md` for details.
-
-## Skills.sh
-
-This repo includes notes on [Skills.sh](https://skills.sh) ([vercel-labs/skills](https://github.com/vercel-labs/skills)), an open-source package manager and registry for AI agent skills across 38+ platforms. See `docs/skills-sh.md` for CLI usage.
-
-## Cognee
-
-This repo includes notes on [Cognee](https://github.com/topoteretes/cognee), an open-source AI memory platform by Topoteretes using ECL pipelines and semantic knowledge graphs. See `docs/topoteretes-cognee.md` for python quickstart and architecture details.
-
-## Agent Lightning
-
-This repo includes notes on [Agent Lightning](https://github.com/microsoft/agent-lightning), Microsoft's framework for training and optimizing AI agents using Reinforcement Learning (RL) and Automatic Prompt Optimization (APO). See `docs/microsoft-agent-lightning.md` for setup and usage.
-
-## Image Blaster
-
-This repo includes notes on [Image Blaster](https://github.com/neilsonnn/image-blaster), an image-to-3D-world generative pipeline for Claude Code integrating World Labs, Hunyuan 3D, and ElevenLabs. See `docs/neilsonnn-image-blaster.md` for details.
-
-## GBrain
-
-This repo includes notes on [GBrain](https://github.com/garrytan/gbrain), Garry Tan's persistent AI agent memory engine with self-wiring typed knowledge graphs and hybrid vector/BM25 search. See `docs/garrytan-gbrain.md` for setup and details.
-
-## nanochat
-
-This repo includes notes on [nanochat](https://github.com/karpathy/nanochat), Andrej Karpathy's full-stack single-GPU ChatGPT training harness covering Tokenization, Pretraining, SFT, and GRPO RL. See `docs/karpathy-nanochat.md` for pipeline stages.
-
-## Ponytail
-
-This repo includes notes on [Ponytail](https://github.com/DietrichGebert/ponytail), DietrichGebert's anti-over-engineering skill for AI coding agents enforcing a 7-step Decision Ladder. See `docs/dietrichgebert-ponytail.md` for rules and levels.
-
-## FreeDomain
-
-This repo includes notes on [FreeDomain](https://github.com/DigitalPlatDev/FreeDomain), DigitalPlat's open-source free domain registration (.dpdns.org, .us.kg, .qzz.io) and DNS management service. See `docs/digitalplatdev-freedomain.md` for dashboard details.
+6. Choose the appropriate category for new docs:
+   - `agents/frameworks/` for agent orchestration & execution
+   - `agents/memory/` for memory engines & knowledge graphs
+   - `agents/skills/` for skill systems & registries
+   - `agents/capabilities/` for agent tools & functions
+   - `llm-inference/` for LLM optimization
+   - `testing/` for test frameworks
+   - `ui-components/` for frontend libraries
+   - `devops-infra/` for CI/CD and infrastructure
+   - `dev-stacks/` for full-stack setups
+   - `analysis-docs/` for codebase analysis tools
+   - `resources/` for catalogs and meta-tools
 
 ## Naming Convention
 
 Use short lowercase filenames with hyphens:
 
 ```text
-docs/graphify.md
-docs/llm-wiki.md
-docs/context-engineering.md
+docs/agents/frameworks/crewai-llm-hooks.md
+docs/agents/memory/gbrain.md
+docs/llm-inference/kv-caching.md
+docs/testing/playwright.md
 prompts/repo-review.md
 templates/tool-note.md
 ```
