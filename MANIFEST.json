@@ -73,6 +73,12 @@
             "use_cases": ["skill_discovery", "skill_installation", "skill_management"]
           },
           {
+            "name": "unlazy",
+            "file": "docs/agents/skills/unlazy.md",
+            "tags": ["skills", "verification", "gates", "depth-tree", "anti-laziness", "completion"],
+            "use_cases": ["task_completion", "verification_driven", "anti_laziness", "substantial_work", "parallel_coordination"]
+          },
+          {
             "name": "Awesome OpenClaw Skills",
             "file": "docs/agents/skills/voltagent-awesome-openclaw-skills.md",
             "tags": ["skills", "catalog", "openclaw", "index"],
@@ -321,6 +327,7 @@
   "query_examples": {
     "by_use_case": {
       "browser_automation": ["docs/agents/capabilities/agent-browser.md", "docs/testing/playwright.md"],
+      "task_completion": ["docs/agents/skills/unlazy.md", "docs/agents/frameworks/get-shit-done.md"],
       "long_term_memory": ["docs/agents/memory/garrytan-gbrain.md", "docs/agents/memory/topoteretes-cognee.md"],
       "speed_optimization": ["docs/llm-inference/kv-caching.md", "docs/llm-inference/paged-attention.md"],
       "ci_cd": ["docs/devops-infra/github-actions.md"],
@@ -332,7 +339,9 @@
       "memory": ["docs/agents/memory/garrytan-gbrain.md", "docs/agents/memory/topoteretes-cognee.md", "docs/llm-inference/paged-attention.md"],
       "optimization": ["docs/llm-inference/kv-caching.md", "docs/llm-inference/paged-attention.md"],
       "rust": ["docs/agents/capabilities/agent-browser.md"],
-      "browser": ["docs/agents/capabilities/agent-browser.md", "docs/testing/playwright.md"]
+      "browser": ["docs/agents/capabilities/agent-browser.md", "docs/testing/playwright.md"],
+      "verification": ["docs/agents/skills/unlazy.md"],
+      "anti-laziness": ["docs/agents/skills/unlazy.md", "docs/agents/skills/dietrichgebert-ponytail.md"]
     }
   },
   "related_tools": {

@@ -32,6 +32,7 @@ Memory engines, knowledge graphs, and context management.
 Skill systems, registries, and procedural knowledge.
 
 - `docs/agents/skills/skills-sh.md` - Skills.sh (`vercel-labs/skills`) open-source package manager and registry for AI agent skills.
+- `docs/agents/skills/unlazy.md` - unlazy (`Leonxlnx/unlazy`) anti-laziness skill using Depth Tree method with gate-based verification.
 - `docs/agents/skills/voltagent-awesome-openclaw-skills.md` - Awesome OpenClaw Skills (`VoltAgent/awesome-openclaw-skills`) curated index of 5,000+ agent skills.
 - `docs/agents/skills/huggingface-upskill.md` - Hugging Face Upskill (`huggingface/upskill`) skill generation, distillation, and evaluation tool.
 - `docs/agents/skills/dietrichgebert-ponytail.md` - Ponytail (`DietrichGebert/ponytail`) anti-over-engineering decision ladder skill for AI agents.
