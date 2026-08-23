@@ -114,10 +114,22 @@
             "use_cases": ["social_media_access", "web_scraping", "content_retrieval"]
           },
           {
+            "name": "Apify",
+            "file": "docs/agents/capabilities/apify.md",
+            "tags": ["scraping", "actors", "serverless", "marketplace", "platform-specific", "crawling", "proxies", "mcp"],
+            "use_cases": ["web_scraping", "platform_scraping", "instagram_scraping", "linkedin_scraping", "google_maps", "actor_development", "monetization", "scheduled_scraping"]
+          },
+          {
             "name": "Autoresearch",
             "file": "docs/agents/capabilities/autoresearch.md",
             "tags": ["research", "ml", "autonomous", "karpathy"],
             "use_cases": ["ml_research", "experiment_loops", "autonomous_research"]
+          },
+          {
+            "name": "Firecrawl",
+            "file": "docs/agents/capabilities/firecrawl.md",
+            "tags": ["scraping", "crawling", "llm-ready", "markdown", "ai-agents", "api-first", "rag", "mcp"],
+            "use_cases": ["web_scraping", "ai_data_ingestion", "rag_pipelines", "autonomous_research", "documentation_crawling", "llm_training_data"]
           },
           {
             "name": "Agent Lightning",
@@ -332,16 +344,26 @@
       "speed_optimization": ["docs/llm-inference/kv-caching.md", "docs/llm-inference/paged-attention.md"],
       "ci_cd": ["docs/devops-infra/github-actions.md"],
       "mobile_testing": ["docs/testing/appium-android.md"],
-      "codebase_analysis": ["docs/analysis-docs/graphify.md"]
+      "codebase_analysis": ["docs/analysis-docs/graphify.md"],
+      "web_scraping": ["docs/agents/capabilities/firecrawl.md", "docs/agents/capabilities/apify.md", "docs/agents/capabilities/agent-browser.md"],
+      "platform_scraping": ["docs/agents/capabilities/apify.md"],
+      "ai_data_ingestion": ["docs/agents/capabilities/firecrawl.md"],
+      "rag_pipelines": ["docs/agents/capabilities/firecrawl.md"]
     },
     "by_tag": {
-      "mcp": ["docs/agents/frameworks/crewai-llm-hooks.md", "docs/agents/memory/garrytan-gbrain.md", "docs/agents/capabilities/agent-reach.md", "docs/agents/capabilities/agent-browser.md", "docs/llm-inference/omniroute.md", "docs/testing/playwright.md"],
+      "mcp": ["docs/agents/frameworks/crewai-llm-hooks.md", "docs/agents/memory/garrytan-gbrain.md", "docs/agents/capabilities/agent-reach.md", "docs/agents/capabilities/agent-browser.md", "docs/agents/capabilities/apify.md", "docs/agents/capabilities/firecrawl.md", "docs/llm-inference/omniroute.md", "docs/testing/playwright.md"],
       "memory": ["docs/agents/memory/garrytan-gbrain.md", "docs/agents/memory/topoteretes-cognee.md", "docs/llm-inference/paged-attention.md"],
       "optimization": ["docs/llm-inference/kv-caching.md", "docs/llm-inference/paged-attention.md"],
       "rust": ["docs/agents/capabilities/agent-browser.md"],
       "browser": ["docs/agents/capabilities/agent-browser.md", "docs/testing/playwright.md"],
       "verification": ["docs/agents/skills/unlazy.md"],
-      "anti-laziness": ["docs/agents/skills/unlazy.md", "docs/agents/skills/dietrichgebert-ponytail.md"]
+      "anti-laziness": ["docs/agents/skills/unlazy.md", "docs/agents/skills/dietrichgebert-ponytail.md"],
+      "scraping": ["docs/agents/capabilities/firecrawl.md", "docs/agents/capabilities/apify.md"],
+      "crawling": ["docs/agents/capabilities/firecrawl.md", "docs/agents/capabilities/apify.md"],
+      "llm-ready": ["docs/agents/capabilities/firecrawl.md"],
+      "api-first": ["docs/agents/capabilities/firecrawl.md"],
+      "serverless": ["docs/agents/capabilities/apify.md"],
+      "marketplace": ["docs/agents/capabilities/apify.md"]
     }
   },
   "related_tools": {
