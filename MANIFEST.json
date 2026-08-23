@@ -96,6 +96,12 @@
         "description": "Agent tools, capabilities, specialized functions",
         "tools": [
           {
+            "name": "Agent Browser",
+            "file": "docs/agents/capabilities/agent-browser.md",
+            "tags": ["browser", "automation", "rust", "mcp", "headless", "vercel"],
+            "use_cases": ["browser_automation", "web_scraping", "ai_agent_browsing", "mcp_server", "ios_testing", "cloud_browsers"]
+          },
+          {
             "name": "Agent Reach",
             "file": "docs/agents/capabilities/agent-reach.md",
             "tags": ["internet", "search", "twitter", "reddit", "youtube", "mcp"],
@@ -314,17 +320,19 @@
   ],
   "query_examples": {
     "by_use_case": {
+      "browser_automation": ["docs/agents/capabilities/agent-browser.md", "docs/testing/playwright.md"],
       "long_term_memory": ["docs/agents/memory/garrytan-gbrain.md", "docs/agents/memory/topoteretes-cognee.md"],
-      "browser_automation": ["docs/testing/playwright.md"],
       "speed_optimization": ["docs/llm-inference/kv-caching.md", "docs/llm-inference/paged-attention.md"],
       "ci_cd": ["docs/devops-infra/github-actions.md"],
       "mobile_testing": ["docs/testing/appium-android.md"],
       "codebase_analysis": ["docs/analysis-docs/graphify.md"]
     },
     "by_tag": {
-      "mcp": ["docs/agents/frameworks/crewai-llm-hooks.md", "docs/agents/memory/garrytan-gbrain.md", "docs/agents/capabilities/agent-reach.md", "docs/llm-inference/omniroute.md", "docs/testing/playwright.md"],
+      "mcp": ["docs/agents/frameworks/crewai-llm-hooks.md", "docs/agents/memory/garrytan-gbrain.md", "docs/agents/capabilities/agent-reach.md", "docs/agents/capabilities/agent-browser.md", "docs/llm-inference/omniroute.md", "docs/testing/playwright.md"],
       "memory": ["docs/agents/memory/garrytan-gbrain.md", "docs/agents/memory/topoteretes-cognee.md", "docs/llm-inference/paged-attention.md"],
-      "optimization": ["docs/llm-inference/kv-caching.md", "docs/llm-inference/paged-attention.md"]
+      "optimization": ["docs/llm-inference/kv-caching.md", "docs/llm-inference/paged-attention.md"],
+      "rust": ["docs/agents/capabilities/agent-browser.md"],
+      "browser": ["docs/agents/capabilities/agent-browser.md", "docs/testing/playwright.md"]
     }
   },
   "related_tools": {

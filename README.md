@@ -39,6 +39,7 @@ Skill systems, registries, and procedural knowledge.
 #### Agent Capabilities (`docs/agents/capabilities/`)
 Agent tools, capabilities, and specialized functions.
 
+- `docs/agents/capabilities/agent-browser.md` - Agent Browser (Vercel Labs) fast native Rust CLI for AI agent browser automation with MCP support.
 - `docs/agents/capabilities/agent-reach.md` - Agent Reach CLI for reading and searching Twitter, Reddit, YouTube, GitHub, and more.
 - `docs/agents/capabilities/autoresearch.md` - Autoresearch (`karpathy/autoresearch`) autonomous ML research loop and experiment framework by Andrej Karpathy.
 - `docs/agents/capabilities/microsoft-agent-lightning.md` - Agent Lightning (`microsoft/agent-lightning`) RL & prompt optimization framework for AI agents.
